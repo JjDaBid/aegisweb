@@ -427,9 +427,9 @@ textarea {
 .footer-container .leftside-container {
   width: 33%;
   display: flex;
-  padding: 40px;
+  padding: 30px;
   list-style: none;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -438,8 +438,8 @@ textarea {
   list-style: none;
 }
 .footer-container .leftside-container ul li {
-  padding: 5px;
-  margin-left: 20px;
+  width: 100%;
+  padding: 4px;
 }
 .footer-container .leftside-container ul a {
   font-size: 0.8125rem;
@@ -468,7 +468,7 @@ textarea {
   width: 33%;
 }
 .footer-container .info-section .info-section-data {
-  width: 50%;
+  width: 60%;
   display: flex;
   padding: 5px;
   margin: auto;
@@ -539,7 +539,7 @@ textarea {
     width: 100%;
   }
   .footer-container .info-section {
-    width: 100%;
+    width: 40%;
     margin-top: 20px;
     margin-right: 0px;
     margin-bottom: 20px;
@@ -590,8 +590,11 @@ textarea {
     align-items: center;
     flex-direction: column;
   }
-  .social-networks img {
+  .footer-container .social-networks img {
     min-width: 25px;
+  }
+  .footer-container .info-section {
+    width: 50%;
   }
 }
 @media only screen and (max-width: 680px) {
@@ -599,8 +602,11 @@ textarea {
     flex-direction: column;
     gap: 50px;
   }
-  footer {
+  .footer-container {
     margin-top: 50px;
+  }
+  .footer-container .info-section {
+    width: 65%;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -615,15 +621,12 @@ textarea {
     width: 100%;
     grid-template-columns: 1fr;
   }
-  .footer-container .info-section .info-section-data {
-    width: 70%;
-    padding: 5px;
+  .footer-container .info-section {
+    width: 80%;
   }
-  .footer-container .info-section .info-section-data div {
-    justify-content: center;
-  }
-  .footer-container .info-section .info-section-data img {
-    width: 20px;
-    margin-left: 0;
+}
+@media only screen and (max-width: 360px) {
+  .footer-container .info-section {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

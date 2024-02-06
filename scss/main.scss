@@ -466,19 +466,19 @@ textarea {
   .leftside-container {
     width: 33%;
     display: flex;
-    padding: 40px;
+    padding: 30px;
     list-style: none;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 
     ul {
       border-left: white solid;
-      list-style: none;
+      list-style: none;      
 
       li {
-        padding: 5px;
-        margin-left: 20px;
+        width: 100%;
+        padding: 4px;      
       }
 
       a {
@@ -499,7 +499,7 @@ textarea {
     padding: 20px;
     justify-content: center;
     gap: 10px;
-
+    
     img {
       width: 50px;
 
@@ -515,12 +515,12 @@ textarea {
     width: 33%;
     
 
-
     .info-section-data {
-      width: 50%;
+      width: 60%;
       display: flex;
       padding: 5px;
       margin: auto;
+      
       
       img {
         width: 25px;
@@ -535,6 +535,8 @@ textarea {
     }
   }
 }
+
+
 
 @media only screen and (max-width: 990px) {
   .navbar-nav li:hover {
@@ -608,7 +610,7 @@ textarea {
     }
   
     .info-section {
-      width: 100%;
+      width: 40%;
       margin-top: 20px;
       margin-right: 0px;
       margin-bottom: 20px;
@@ -677,9 +679,22 @@ textarea {
     flex-direction: column;
   }
 
-  .social-networks img {
-    min-width: 25px;
+  .footer-container {
+
+    .social-networks img {
+      min-width: 25px;
+    }
+  
+    .info-section {
+      width: 50%;
+
+    }
+
   }
+
+  
+
+
 }
 
 @media only screen and (max-width: 680px) {
@@ -688,8 +703,12 @@ textarea {
     gap: 50px;
   }
 
-  footer {
+  .footer-container {
     margin-top: 50px;
+
+    .info-section {
+      width: 65%;
+    }
   }
 }
 
@@ -709,24 +728,19 @@ textarea {
   }
 
   .footer-container {
-    .info-section {      
-  
-      .info-section-data {
-        width: 70%;
-        padding: 5px;
-       
-    
-        div {
-          justify-content: center;
-          
-        }
-    
-        img {
-          width: 20px;
-          margin-left: 0;
-        }
-      }
+
+    .info-section {
+      width: 80%;
     }
   }
 
+}
+
+@media only screen and (max-width: 360px){
+  .footer-container {
+
+    .info-section {
+      width: 100%;
+    }
+  }
 }
