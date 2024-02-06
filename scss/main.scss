@@ -573,54 +573,62 @@ textarea {
     grid-column: 1 / span 2;
   }
 
+  // Footer
+
   .footer-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
+    align-items: center; 
+    
+    .leftside-container {
+      width: 90%;
+      flex-direction: column;
+      margin-left: 0; 
 
-  .leftside-container {
-    width: 90%;
-    flex-direction: column;
-    margin-left: 0;
+      img {
+        max-width: 300px;
+      }
+  
+      ul {
+        width: 100%;
+        border-top: white solid;  
+        border-left: none;    
+        text-align: center;
+        padding: 0;
+        
+      .leftside-container ul li {
+          margin-left: 0;
+        }
+      }
+    }
 
-    ul {
-      border-top: white solid;
-      border-left: none;
-      text-align: center;
-      padding: 0;
-
-      li {
+    .social-networks {
+      width: 100%;
+    }
+  
+    .info-section {
+      width: 100%;
+      margin-top: 20px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      background: linear-gradient(
+        90deg,
+        rgba(45, 35, 119, 0.8) 0%,
+        rgba(89, 142, 195, 0.8) 50%,
+        rgba(29, 14, 70, 0.8) 100%
+      );
+  
+      div {
+        justify-content: center;
+      }
+  
+      img {
+        width: 20px;
         margin-left: 0;
       }
     }
-  }
-
-  .social-networks {
-    width: 100%;
-  }
-
-  .info-section {
-    width: 90%;
-    margin-top: 20px;
-    margin-right: 0px;
-    margin-bottom: 20px;
-    background: linear-gradient(
-      90deg,
-      rgba(45, 35, 119, 0.8) 0%,
-      rgba(89, 142, 195, 0.8) 50%,
-      rgba(29, 14, 70, 0.8) 100%
-    );
-
-    div {
-      justify-content: center;
-    }
-
-    img {
-      width: 25px;
-      margin-left: 0;
-    }
-  }
+  }  
 }
 
 @media only screen and (max-width: 850px) {
@@ -699,4 +707,26 @@ textarea {
     width: 100%;
     grid-template-columns: 1fr;
   }
+
+  .footer-container {
+    .info-section {      
+  
+      .info-section-data {
+        width: 70%;
+        padding: 5px;
+       
+    
+        div {
+          justify-content: center;
+          
+        }
+    
+        img {
+          width: 20px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
 }
